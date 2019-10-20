@@ -30,9 +30,8 @@ public class CAI {
                 question = getQuestion();
                 System.out.print(question + ": ");
                 double input = scan.nextDouble();
-                Double ans = new Double(df.format(answer));
 
-                if (input == answer || input == ans){
+                if (input == answer || (input > answer && input < (answer+1))){
                     validate = true;
                     cnt1++;
                     display();
